@@ -16,10 +16,11 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  padding: 2px;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +36,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main {
+  min-height: 80vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+  padding: 25px;
+}
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.temp10 {
+  background-image: url("https://images.unsplash.com/photo-1570368191840-ebcc7eeadfef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+.temp30 {
+  background-image: url("https://images.unsplash.com/photo-1465577512280-1c2d41a79862?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+.temp20 {
+  background-image: url("https://images.unsplash.com/photo-1594156596782-656c93e4d504?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  font-style: italic;
+  text-align: center;
+}
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 92px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  box-shadow: 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
+.welcomePage {
+  background-image: url("https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif");
+}
+.welcomeNote {
+  padding: 5px;
+  margin-top: 115px;
+  color: #fff;
+}
+#add-component{
+  background-image: url("https://media1.tenor.com/images/691c3cfa8d913df4c4e06046033ad8bb/tenor.gif?itemid=7354712");
 }
