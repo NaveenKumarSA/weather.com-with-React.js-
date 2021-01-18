@@ -1,8 +1,8 @@
 import React from "react";
 function NavbarComponent() {
   return (
-    <div className="w-100">
-      <h1>This is a Weather App</h1>
+    <div className="w-100 justify-content-center header-div">
+      <p className=" text-center">Welcome to Naveen's weather app</p>
     </div>
   );
 }

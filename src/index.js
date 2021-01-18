@@ -1,23 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import NavbarComponent from './NavbarComponent';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import NavbarComponent from "./NavbarComponent";
+import Footer from "./Footer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <NavbarComponent/>
+    <NavbarComponent />
   </React.StrictMode>,
   document.getElementById("nav-component")
-); 
+);
 
 ReactDOM.render(
   <React.StrictMode>
-   <App/>
+    <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
+);
+ReactDOM.render(
+  <React.StrictMode>
+    <Footer />
+  </React.StrictMode>,
+  document.getElementById("footer")
 );
 
 // If you want to start measuring performance in your app, pass a function

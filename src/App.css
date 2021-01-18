@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Zilla Slab", Georgia, Times, "Times New Roman", serif;
 }
 
 main {
@@ -151,6 +151,15 @@ main {
   margin-top: 115px;
   color: #fff;
 }
-#add-component{
+#add-component {
   background-image: url("https://media1.tenor.com/images/691c3cfa8d913df4c4e06046033ad8bb/tenor.gif?itemid=7354712");
+}
+.header-div {
+  font-family: "Zilla Slab", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 300 !important;
+  font-size: 5vw !important;
+  color: #1b3b43;
+}
+.footerComponent {
+  padding: 5px;
 }

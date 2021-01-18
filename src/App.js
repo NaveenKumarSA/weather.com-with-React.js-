@@ -74,7 +74,7 @@ function App() {
           <div>
             <input
               className="search-bar"
-              placeholder="Search City..."
+              placeholder="Search Here..."
               type="text"
               onChange={(e) => setQuery(e.target.value)}
               value={query}
@@ -91,12 +91,39 @@ function App() {
               </div>
               <div className="weather-box">
                 <div className="temp">{Math.round(weather.main.temp)}°c</div>
-                <div className="weather">{weather.weather[0].main}</div>
+                <div className="row">
+                  <div className="text-white col">
+                    Long : {weather.coord.lon}
+                  </div>
+                  <div className="text-white col">
+                    Min : {Math.round(weather.main.temp_min)}°c
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="text-white col">
+                    Lat : {weather.coord.lat}
+                  </div>
+                  <div className="text-white col">
+                    Max : {Math.round(weather.main.temp_max)}°c
+                  </div>
+                </div>
+
+                <div className="weather justify-left">{weather.weather[0].main}</div>
+                <div className="text-white">
+                  Wind : {weather.wind.speed} KMPH{" "}
+                </div>
+                <div className="text-white">
+                  Humidity : {weather.main.humidity}%{" "}
+                </div>
               </div>
             </div>
           ) : (
-            <div className="welcomeNote">
-              <h3>Welcome to My-Weather App...</h3>
+            <div
+              className="text-center 
+            "
+            >
+              <h3>Search for District or State...</h3>
+              <h5>For better Experience watch in bigger screen</h5>
             </div>
           )}
         </div>
