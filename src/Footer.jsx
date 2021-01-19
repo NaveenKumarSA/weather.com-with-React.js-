@@ -14,9 +14,10 @@ function Footer(props) {
         <h5>Front End - React.js </h5>
         <h5>
           Api -&nbsp;
-          <a href="https://openweathermap.org/api">Open Weather Map.org</a>{" "}
+          <a href="https://openweathermap.org/api">Open Weather Map.org</a>
         </h5>
         <h5>libraries used - React-Bootstrap </h5>
+        <h6>Date of Deploy : 10 January 2021 </h6>
         <a href="https://naveenkumarsa.github.io/" class="btn btn-info">
           Visit Website
         </a>
